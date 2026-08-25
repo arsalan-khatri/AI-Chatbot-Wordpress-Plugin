@@ -1,0 +1,163 @@
+/**
+ * WP AI Chatbot - Admin Dashboard Styles
+ * Path: admin/css/admin-style.css
+ */
+
+/* ==========================================================================
+   1. Main Container & Card Layout
+   ========================================================================== */
+
+/* Wrap the entire form in a modern, clean card */
+body.toplevel_page_wp-ai-chatbot .wrap form {
+    background: #ffffff;
+    padding: 25px 35px;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    margin-top: 0; /* Adjusted to connect seamlessly with tabs */
+    max-width: 900px;
+}
+
+/* Headings inside the card */
+body.toplevel_page_wp-ai-chatbot .wrap h2,
+body.toplevel_page_wp-ai-chatbot .wrap h3 {
+    margin-top: 0;
+    color: #1d2327;
+    font-weight: 600;
+    border-bottom: 1px solid #f0f0f1;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   2. Tab Navigation Enhancements
+   ========================================================================== */
+
+body.toplevel_page_wp-ai-chatbot .nav-tab-wrapper {
+    border-bottom: none; /* Removed default border to merge with card */
+    padding-top: 15px;
+    max-width: 900px;
+}
+
+body.toplevel_page_wp-ai-chatbot .nav-tab {
+    background: #f0f0f1;
+    color: #50575e;
+    border: 1px solid #c3c4c7;
+    border-bottom: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 6px;
+    border-radius: 6px 6px 0 0;
+    transition: all 0.2s ease-in-out;
+}
+
+body.toplevel_page_wp-ai-chatbot .nav-tab:hover {
+    background: #e6e6e6;
+    color: #1d2327;
+}
+
+/* Active Tab seamlessly merges with the white form card below it */
+body.toplevel_page_wp-ai-chatbot .nav-tab-active,
+body.toplevel_page_wp-ai-chatbot .nav-tab-active:hover {
+    background: #ffffff;
+    color: #2271b1;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: -1px; /* Overlaps the form's top border */
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================================================
+   3. Form Tables & Input Fields
+   ========================================================================== */
+
+body.toplevel_page_wp-ai-chatbot .form-table {
+    margin-top: 0;
+}
+
+/* Labels */
+body.toplevel_page_wp-ai-chatbot .form-table th {
+    font-weight: 600;
+    color: #2c3338;
+    padding: 20px 20px 20px 0;
+    vertical-align: top;
+    width: 220px;
+}
+
+/* Inputs, Selects, and Textareas */
+body.toplevel_page_wp-ai-chatbot .form-table td input[type="text"],
+body.toplevel_page_wp-ai-chatbot .form-table td input[type="password"],
+body.toplevel_page_wp-ai-chatbot .form-table td select,
+body.toplevel_page_wp-ai-chatbot .form-table td textarea {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 5px;
+    border: 1px solid #8c8f94;
+    padding: 8px 12px;
+    font-size: 14px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) inset;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Focus State for accessibility and premium feel */
+body.toplevel_page_wp-ai-chatbot .form-table td input:focus,
+body.toplevel_page_wp-ai-chatbot .form-table td select:focus,
+body.toplevel_page_wp-ai-chatbot .form-table td textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+/* System Prompt Textarea specific tweaks */
+body.toplevel_page_wp-ai-chatbot textarea.large-text.code {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: #f6f7f7;
+}
+
+/* ==========================================================================
+   4. Helper Text & Submit Button
+   ========================================================================== */
+
+/* Descriptions below inputs */
+body.toplevel_page_wp-ai-chatbot p.description {
+    margin-top: 8px;
+    color: #646970;
+    font-size: 13px;
+    font-style: italic;
+    max-width: 450px;
+    line-height: 1.5;
+}
+
+/* Submit Button Wrapper Spacing */
+body.toplevel_page_wp-ai-chatbot .submit {
+    padding-top: 25px;
+    border-top: 1px solid #f0f0f1;
+    margin-top: 20px;
+}
+
+/* Styling the primary save button */
+body.toplevel_page_wp-ai-chatbot .button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    padding: 4px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Custom Form Builder Table */
+#wp-ai-form-builder table {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+#wp-ai-form-builder th, #wp-ai-form-builder td {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f1;
+}
+#wp-ai-form-builder th {
+    background: #f6f7f7;
+    font-weight: 600;
+}
